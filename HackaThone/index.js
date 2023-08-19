@@ -9,7 +9,7 @@ window.logout = logout
 var NewsDataArr = [];
 
 let getNews = () => {
-    const apiKey = 'da82a580dc16bf30bcdc67cc94974662';
+    const apiKey = '558ad559292b277ea0a3978963a9dec0';
     const searchQuery = 'blogs'; // Change this to your desired search term
     const url = `https://gnews.io/api/v4/search?q=${searchQuery}&lang=en&country=us&max=8&apikey=${apiKey}`;
 
