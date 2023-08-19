@@ -1,7 +1,3 @@
-
-
-
-
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
 
@@ -503,5 +499,32 @@ body{
 .seyleNav span{
   margin-left: 100px;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand-container {
+  display: inline-block; /* Ensure the elements are treated as blocks */
+}
+
+
+.color{
+  background: #720e9e !important;
+  padding: 0;
+} 
+
+.text{
+  color:#fff ;
+}
+
+.text:hover{
+  
+  color:#fff ;
+opacity: 0.8;  
 }
