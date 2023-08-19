@@ -137,8 +137,3 @@ const createPostWithImage = async (postTitle, postContent) => {
 };
 
 
-
-
-
-
-

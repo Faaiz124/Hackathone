@@ -128,3 +128,18 @@ celebrityData.forEach(celebrity => {
     main.innerHTML += newPost;
 });
 
+function updateGreeting() {
+    const currentHour = new Date().getHours();
+    const greetingElement = document.getElementById('greeting');
+
+    if (currentHour >= 5 && currentHour < 12) {
+        greetingElement.textContent = 'Good Morning Reader';
+    } else if (currentHour >= 12 && currentHour < 18) {
+        greetingElement.textContent = 'Good Afternoon Reader';
+    } else {
+        greetingElement.textContent = 'Good Evening Reader';
+    }
+}
+
+// Call the function when the page loads
+window.onload = updateGreeting;
