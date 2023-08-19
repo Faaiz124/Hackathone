@@ -6,7 +6,6 @@ import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } f
 import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore.js";
 // console.log({auth ,db, app})
 
-
 function SignIn() {
     const Semail = document.getElementById("signInEmail").value;
     const Spassword = document.getElementById('signInPassword').value;
@@ -14,28 +13,30 @@ function SignIn() {
     document.getElementById("signInEmail").value = "";
     document.getElementById('signInPassword').value = "";
 
-
     signInWithEmailAndPassword(auth, Semail, Spassword)
         .then((userCredential) => {
             const user = userCredential.user;
-            localStorage.setItem('user', user.uid)
-            // localStorage.setItem('name',user.name)
-            // console.log("user",user)
-            // alert("Wellcome To Firease Login")
 
+            // You need to get the user's name from somewhere, perhaps during registration
+           // Replace with the actual name retrieval logic
+
+            localStorage.setItem('user', user.uid);
+            
+            console.log("user", user);
             window.location.href = "index.html";  
-        
-
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-            //   console.log("errorCode",errorCode)
-            alert("Wrog Password")
+            alert("Wrong Password");
         });
-
 }
 
 
 
 window.SignIn = SignIn
+
+
+
+
+

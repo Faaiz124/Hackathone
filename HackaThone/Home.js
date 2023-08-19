@@ -48,6 +48,7 @@ const getUserData = async (uid) => {
         <h2>${docSnap.data().name}</h2>
         <h2>${docSnap.data().email}</h2>
       `
+      
         // Name.value = docSnap.data().fullname; 
         document.getElementById('loader').style.display = 'none';
         console.log("No such document!");

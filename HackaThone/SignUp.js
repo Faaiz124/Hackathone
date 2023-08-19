@@ -44,6 +44,7 @@ function SignUp(){
          uid: user.uid,
        });
        localStorage.setItem('user', user.uid);
+       localStorage.setItem('name', UserData.name);
        window.location.href = "index.html";
        console.log("Document written with ID: ", user.uid);
      } catch (e) {
@@ -59,7 +60,6 @@ function SignUp(){
 }
 
 // SignUp()
-
 
 
 
