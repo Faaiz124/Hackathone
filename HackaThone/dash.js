@@ -137,3 +137,17 @@ const createPostWithImage = async (postTitle, postContent) => {
 };
 
 
+var userData = localStorage.getItem("user");
+
+var hide1Element = document.getElementById("hide1");
+var logoutButtonElement = document.getElementById("logoutButton");
+
+if (userData) {
+    hide1Element.style.display = "inline-block";
+    logoutButtonElement.style.display = "inline-block";
+    logoutButtonElement.innerHTML = "Log-in";
+} else {
+    hide1Element.style.display = "none";
+    logoutButtonElement.style.display = "none";
+    logoutButtonElement.innerHTML = "Log-out";
+}
