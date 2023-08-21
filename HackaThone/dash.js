@@ -145,9 +145,9 @@ var logoutButtonElement = document.getElementById("logoutButton");
 if (userData) {
     hide1Element.style.display = "inline-block";
     logoutButtonElement.style.display = "inline-block";
-    logoutButtonElement.innerHTML = "Log-in";
+    logoutButtonElement.innerHTML = "Log-out";
 } else {
     hide1Element.style.display = "none";
-    logoutButtonElement.style.display = "none";
-    logoutButtonElement.innerHTML = "Log-out";
+    logoutButtonElement.style.display = "inline-block";
+    logoutButtonElement.innerHTML = "Log-in";
 }

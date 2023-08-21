@@ -4,12 +4,10 @@
     box-sizing: border-box;
 }
 
-body{
-     background: #91e7e5 !important;
-}
+
 
 .container{
-    background: #4b4e7e;
+    /* background: #4b4e7e; */
     width: 90% !important;
     height: 75vh;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
@@ -27,15 +25,17 @@ body{
     border-radius: 50%;
    margin: 0 auto;
    
+   
 }
 
 #Profile-pic{
-    background: #fff;
+    background: #2c2727;
     object-fit: cover;
     margin-top: 30px;
     width: 130px;
     height: 130px;
     border-radius: 50%;
+    border: 2PX solid #000;
 }
 
 #file{
@@ -70,16 +70,14 @@ body{
     width: 100%;
     
 }
-.chaticon{
-    color: antiquewhite;
-}
+
 .chaticon:active{
     opacity: 0.5;
     zoom: 1.1;
 }
 
 .div ,h1 ,h2{
-    color: antiquewhite !important;
+    color: #2c2727 !important;
     
 }
 

@@ -78,7 +78,7 @@ onAuthStateChanged(auth, (user) => {
 
 const logout = () => {
     localStorage.clear();
-    location.href = "index.html"
+    location.href = "Login.html"
 }
 // getUserData()
 window.logout = logout
@@ -161,15 +161,18 @@ upload.addEventListener('click', async () => {
     }
 })
 
-const chatqury = () => {
-    var innerwidth = window.innerWidth;
-    if (innerwidth <= 768) {
-        // console.log(innerwidth)
-        window.location.href = "Chat.html"
-    }
-    else {
-        window.location.href = "comChat.html"
-    }
+
+
+var userData = localStorage.getItem("user");
+
+var logoutButtonElement = document.getElementById("logoutButton");
+
+if (userData) {
+    logoutButtonElement.style.display = "inline-block";
+    logoutButtonElement.innerHTML = "Log-out";
+} else {
+    logoutButtonElement.style.display = "inline-block";
+    logoutButtonElement.innerHTML = "Log-in";
 }
 
 window.chatqury = chatqury;
